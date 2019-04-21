@@ -40,7 +40,6 @@ def download(keyword, photos):
         traceback.print_exc()
 
 def main():
-
     flicker = flickrapi.FlickrAPI(flickr_api_key, secret_key, format='parsed-json')
     for keyword in keywords:
         print('*** {} ***'.format(keyword))
